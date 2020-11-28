@@ -2,7 +2,8 @@ import readlineSync from 'readline-sync';
 import userName from '../greetings.js';
 import getRandomNumber from '../randomNumber.js';
 
-console.log(`Hello, ${userName}!`);
+
+const name = userName();
 
 const numberOfRounds = 3;
 
@@ -16,11 +17,11 @@ const isEvenGame = () => {
     console.log(`Question: ${ranNum}`);
     const gamerAnswer = readlineSync.question('Your answer: ');
     if (correct !== gamerAnswer) {
-      return console.log(`'${gamerAnswer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${userName}.`);
+      return console.log(`'${gamerAnswer}' is wrong answer ;(. Correct answer was '${correct}'.\nLet's try again, ${name}.`);
     }
     console.log('Correct');
   }
-  return console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default isEvenGame;
