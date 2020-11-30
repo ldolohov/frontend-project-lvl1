@@ -12,5 +12,3 @@ export const isEvenGame = () => {
     result,
   };
 };
-
-export default isEvenGame;
