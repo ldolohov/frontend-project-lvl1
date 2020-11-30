@@ -1,3 +1,6 @@
+import readlineSync from 'readline-sync';
+import userName from './greetings.js';
+
 const gameFlow = (rules, getGameData) => {
   const numberOfRounds = 3;
   console.log('Welcome to the Brain Games!');
@@ -14,5 +17,7 @@ const gameFlow = (rules, getGameData) => {
     }
     console.log('Correct');
   }
-  return console.log(`Congratulations, ${name}`)
-}
+  console.log(`Congratulations, ${name}`);
+};
+
+export default gameFlow;

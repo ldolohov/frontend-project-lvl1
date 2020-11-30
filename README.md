@@ -5,3 +5,5 @@
 ![Make-lint](https://github.com/ldolohov/frontend-project-lvl1/workflows/Make-lint/badge.svg)
 
 [![asciicast](https://asciinema.org/a/PNJ8dpcjZoWNJv1hvArbdg1OD.svg)](https://asciinema.org/a/PNJ8dpcjZoWNJv1hvArbdg1OD)
+
+[![asciicast](https://asciinema.org/a/376191.svg)](https://asciinema.org/a/376191)
