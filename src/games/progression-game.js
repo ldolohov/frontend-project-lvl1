@@ -11,7 +11,6 @@ export const progressionGame = () => {
     startNum += progressNum;
   }
   const result = arr[getRandomNumber(0, 9)];
-
   const indexOfRandom = arr.indexOf(result);
   arr[indexOfRandom] = '..';
   const question = `${arr}`;
