@@ -15,9 +15,9 @@ const gameFlow = (rules, getGameData) => {
       console.log(`'Let's try again, ${name}!`);
       return;
     }
-    console.log('Correct');
+    console.log('Correct!');
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default gameFlow;
