@@ -11,8 +11,8 @@ const gameFlow = (rules, getGameData) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== String(result)) {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${result}.`);
-      console.log(`'Let's try again, ${name}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${result}'.`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
     console.log('Correct!');
