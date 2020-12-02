@@ -3,9 +3,9 @@ import playGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const progressionGame = () => {
+const defineProgression = () => {
   const arr = [];
-  let startNum = getRandomNumber(2);
+  const startNum = getRandomNumber(2);
   const progressNum = getRandomNumber(2, 10);
   const hiddenElement = getRandomNumber(0, 9);
   for (let i = 0; i < 10; i += 1) {
@@ -19,4 +19,4 @@ const progressionGame = () => {
   };
 };
 
-export default () => playGame(gameDescription, progressionGame);
+export default () => playGame(gameDescription, defineProgression);

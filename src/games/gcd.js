@@ -3,21 +3,28 @@ import playGame from '../index.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-const gameGcd = () => {
-  let firstNum = getRandomNumber();
-  let secondNum = getRandomNumber();
-  const question = `${firstNum} ${secondNum}`;
+const defineCommonDivider = (firstNum, secondNum) => {
   let temp;
-  while ((firstNum % secondNum) > 0) {
-    temp = firstNum % secondNum;
-    firstNum = secondNum;
-    secondNum = temp;
+  let first = firstNum;
+  let second = secondNum;
+  while ((first % second) > 0) {
+    temp = first % second;
+    first = second;
+    second = temp;
   }
-  const result = String(secondNum);
+  return second;
+};
+
+const getAnswer = () => {
+  const firstNum = getRandomNumber();
+  const secondNum = getRandomNumber();
+  const question = `${firstNum} ${secondNum}`;
+  const result = String(defineCommonDivider(firstNum, secondNum));
+
   return {
     question,
     result,
   };
 };
 
-export default () => playGame(gameDescription, gameGcd);
+export default () => playGame(gameDescription, getAnswer);

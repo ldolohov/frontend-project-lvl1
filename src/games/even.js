@@ -3,11 +3,12 @@ import playGame from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no"';
 
+const correctAnswer = (number) => number % 2 === 0;
+
 const isEvenGame = () => {
   const ranNum = getRandomNumber();
-  const correct = (number) => (number % 2 === 0 ? 'yes' : 'no');
-  const question = `${ranNum}`;
-  const result = correct(ranNum);
+  const question = String(ranNum);
+  const result = correctAnswer(ranNum) ? 'yes' : 'no';
   return {
     question,
     result,
