@@ -8,7 +8,7 @@ const calcGame = () => {
   let result;
   const firstNum = getRandomNumber();
   const secondNum = getRandomNumber();
-  const operator = operators[Math.floor(Math.random() * 3)];
+  const operator = operators[getRandomNumber(0, 3)];
   const question = `${firstNum} ${operator} ${secondNum}`;
   switch (operator) {
     case '+':
