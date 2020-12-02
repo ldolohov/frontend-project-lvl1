@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync';
-import userName from './greetings.js';
 
-const gameFlow = (rules, getGameData) => {
-  const numberOfRounds = 3;
+const numberOfRounds = 3;
+
+const playGame = (rules, getGameData) => {
   console.log('Welcome to the Brain Games!');
-  const name = userName();
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`'Hello, ${name}'!`)
   console.log(`${rules}`);
   for (let i = 0; i < numberOfRounds; i += 1) {
     const { question, result } = getGameData();
@@ -20,4 +21,4 @@ const gameFlow = (rules, getGameData) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-export default gameFlow;
+export default playGame;
