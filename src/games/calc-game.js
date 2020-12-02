@@ -1,8 +1,9 @@
 import getRandomNumber from '../randomNumber.js';
+import playGame from '../index.js';
 
-export const gameDescription = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
-export const calcGame = () => {
+const calcGame = () => {
   const operators = ['+', '-', '*'];
   let result;
   const firstNum = getRandomNumber();
@@ -27,3 +28,5 @@ export const calcGame = () => {
     result,
   };
 };
+
+export default () => playGame(gameDescription, calcGame);

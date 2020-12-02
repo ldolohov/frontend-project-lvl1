@@ -1,5 +1,5 @@
 import getRandomNumber from '../randomNumber.js';
-import gameFlow from '../index.js';
+import playGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -19,4 +19,4 @@ const progressionGame = () => {
   };
 };
 
-export default () => gameFlow(gameDescription, progressionGame);
+export default () => playGame(gameDescription, progressionGame);
