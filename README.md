@@ -1,7 +1,7 @@
 # Brain games
 ## App for brain training
 ### Hexlet tests and linter status:
-[![Actions Status](/workflows/hexlet-check/badge.svg)](https://github.com/vitalii88/frontend-project-lvl1/actions?query=workflow%3A%22Node+CI%22)
+[![Actions Status](/workflows/hexlet-check/badge.svg)](https://github.com/ldolohov/frontend-project-lvl1/actions?query=workflow%3Ahexlet-check)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/c31c34a532ed2e23e614/maintainability)](https://codeclimate.com/github/ldolohov/frontend-project-lvl1/maintainability)
 
