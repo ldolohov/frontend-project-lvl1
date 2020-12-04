@@ -3,7 +3,7 @@ import playGame from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const operatorsQuantity = 3
+const operatorsQuantity = 3;
 
 const getCorrectAnswer = () => {
   const operators = ['+', '-', '*'];
