@@ -1,10 +1,11 @@
 # Brain games
 ## App for brain training
 ### Hexlet tests and linter status:
-![Actions Status](/workflows/hexlet-check/badge.svg)
+[![Actions Status](/workflows/hexlet-check/badge.svg)](https://github.com/vitalii88/frontend-project-lvl1/actions?query=workflow%3A%22Node+CI%22)
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/c31c34a532ed2e23e614/maintainability)](https://codeclimate.com/github/ldolohov/frontend-project-lvl1/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c31c34a532ed2e23e614/test_coverage)](https://codeclimate.com/github/ldolohov/frontend-project-lvl1/test_coverage)
-![Make-lint](https://github.com/ldolohov/frontend-project-lvl1/workflows/Make-lint/badge.svg)
+
+[![Linter](https://github.com/ldolohov/frontend-project-lvl1/workflows/Make-lint/badge.svg)](https://github.com/ldolohov/frontend-project-lvl1/actions?query=workflow%3AMake-lint)
 
 ### Install game packages
 
@@ -50,6 +51,6 @@ brain-progression
 ## Prime game
 Answer is this number prime or not
 ```
-brain-prime 
+brain-prime
 ```
 [![asciicast](https://asciinema.org/a/g85z2szzSua6FzcU35HkZv8Nm.svg)](https://asciinema.org/a/g85z2szzSua6FzcU35HkZv8Nm)
