@@ -3,14 +3,12 @@ import playGame from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const operatorsQuantity = 3;
-
 const getCorrectAnswer = () => {
   const operators = ['+', '-', '*'];
   let result;
   const firstNum = getRandomNumber();
   const secondNum = getRandomNumber();
-  const operator = operators[getRandomNumber(0, operatorsQuantity)];
+  const operator = operators[getRandomNumber(0, operators.length)];
   const question = `${firstNum} ${operator} ${secondNum}`;
   switch (operator) {
     case '+':
